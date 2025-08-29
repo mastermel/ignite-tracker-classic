@@ -1,0 +1,12 @@
+## Interface: 11305
+## Author: pjp (Pixel-Draka (NA) <From Chaos>, Moxxe-Benediction (NA) <Summit>)
+## Version: 1.08
+## Title: IgniteTracker
+## Notes: Track Ignite and Scorch debuffs
+## SavedVariablesPerCharacter: IgniteTrackerDB
+## OptionalDeps: 
+## DefaultState: enabled
+
+embeds.xml
+IgniteTracker.lua
+CombustTracker.lua
