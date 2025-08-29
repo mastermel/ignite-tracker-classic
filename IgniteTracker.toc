@@ -1,6 +1,6 @@
-## Interface: 11305
-## Author: pjp (Pixel-Draka (NA) <From Chaos>, Moxxe-Benediction (NA) <Summit>)
-## Version: 1.08
+## Interface: 11507
+## Author: pjp (Pixel-Draka (NA) <From Chaos>), Moxxe-Benediction (NA) <Summit>, Kortan-Dreamscythe (NA) <Beyond Honor>
+## Version: 1.10
 ## Title: IgniteTracker
 ## Notes: Track Ignite and Scorch debuffs
 ## SavedVariablesPerCharacter: IgniteTrackerDB
