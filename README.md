@@ -47,16 +47,18 @@ Authors:
 - Make crit tracker scrollable
 
 ## Revision History
-|2020-08-25 | 1.08 | Crit tracker should now stay hidden, fixed bug with Scorch icon when switching targets
-|2020-08-12 | 1.07 | Non-latin clients will now use default game fonts
-|2020-08-10 | 1.06 | Reworked moving/anchoring
-|2020-07-31 | 1.05 | Fixed issue with Combustion Tracker, added number of crits since cast<br>- Added numeric timers to Ignite and Scorch<br>- Move threat to the left of icons<br>- Added Ignite stack to the right of Ignite icon
-|2020-07-25 | 1.04 | Added Combustion Tracker
-|2020-07-14 | 1.03 | Use localized name for Scorch
-|2020-07-09 | 1.02 | Changed to Blizzard threat API, added player threat to Scorch bar
-|2020-05-19 | 1.01 | Added threat of current Ignite holder
-|2020-02-29 | 1.00 | Timers should now properly display at anchor position<br>- Minimap icon will stay shown if option is set
-|2019-08-14 | 0.93 | Reworked a lot of spell handling due to Blizzard changes between closed beta and stress test 3
-|2019-06-23 | 0.92 | Switched to SpellID instead of SpellName for debuff detection so it works for all localizations<br>- Updated frame position saving
-|2019-06-15 | 0.91 | Fixed bug where no target was selected when Scorch is applied<br>- Fixed bug when Scorch debuff drops off and doesn't reapply properly
+| Date | Version | Notes |
+| ---- | ------- | ----- |
+| 2020-08-25 | 1.08 | Crit tracker should now stay hidden, fixed bug with Scorch icon when switching targets
+| 2020-08-12 | 1.07 | Non-latin clients will now use default game fonts
+| 2020-08-10 | 1.06 | Reworked moving/anchoring
+| 2020-07-31 | 1.05 | Fixed issue with Combustion Tracker, added number of crits since cast<br>- Added numeric timers to Ignite and Scorch<br>- Move threat to the left of icons<br>- Added Ignite stack to the right of Ignite icon
+| 2020-07-25 | 1.04 | Added Combustion Tracker
+| 2020-07-14 | 1.03 | Use localized name for Scorch
+| 2020-07-09 | 1.02 | Changed to Blizzard threat API, added player threat to Scorch bar
+| 2020-05-19 | 1.01 | Added threat of current Ignite holder
+| 2020-02-29 | 1.00 | Timers should now properly display at anchor position<br>- Minimap icon will stay shown if option is set
+| 2019-08-14 | 0.93 | Reworked a lot of spell handling due to Blizzard changes between closed beta and stress test 3
+| 2019-06-23 | 0.92 | Switched to SpellID instead of SpellName for debuff detection so it works for all localizations<br>- Updated frame position saving
+| 2019-06-15 | 0.91 | Fixed bug where no target was selected when Scorch is applied<br>- Fixed bug when Scorch debuff drops off and doesn't reapply properly
 |2019-06-09 | 0.90 | Classic WoW Beta release
