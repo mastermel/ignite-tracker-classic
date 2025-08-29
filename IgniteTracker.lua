@@ -64,7 +64,6 @@ local scorchSpellTable = { [10207] = true, [10206] = true, [10205] = true,
 _G[addonName] = addon
 addon.healthCheck = true
 
--- slash commands
 SlashCmdList["IgniteTracker"] = function(inArgs)
 
 	local wArgs = strtrim(inArgs)
@@ -87,7 +86,8 @@ SlashCmdList["IgniteTracker"] = function(inArgs)
 		scorchbar:Show()
 		scorchIcon:Show()
 		lockStatus = 0	
-	elseif wArgs == "lock" then		local _, _, relativePoint, xPos, yPos = ignitebar:GetPoint()
+	elseif wArgs == "lock" then
+		local _, _, relativePoint, xPos, yPos = ignitebar:GetPoint()
 		ignitebar:Hide()
 		igniteIcon:Hide()
 		igniteTimer = 0
@@ -130,7 +130,7 @@ SLASH_IgniteTracker1 = "/ignitetracker"
 ------------------
 --- Main frame ---
 ------------------
-igniteConfig = CreateFrame("Frame", "igniteFrame", UIParent)
+igniteConfig = CreateFrame("Frame", "igniteFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 igniteConfig:SetMovable(true)
 igniteConfig:EnableMouse(true)
 igniteConfig:RegisterForDrag("LeftButton")
@@ -140,7 +140,7 @@ igniteConfig:SetScript("OnDragStop", igniteConfig.StopMovingOrSizing)
 
 igniteFrame.texture = igniteFrame:CreateTexture(nil, "BACKGROUND")
 igniteFrame.texture:SetAllPoints(igniteFrame)
---igniteFrame.texture:SetTexture("Interface\\AddOns\\Assign\\Media\\black.tga")
+
 igniteFrame:SetBackdrop({bgFile = [[Interface\ChatFrame\ChatFrameBackground]]})
 igniteFrame:SetBackdropColor(0, 0, 0, 1)
 
@@ -175,7 +175,7 @@ local function onevent(self, event, prefix, msg, channel, sender, ...)
 		-- local _, _, _, iframex, iframey = igniteFrame:GetPoint()
 		-- print(iframex, iframey)
 		
-		ignitebar = CreateFrame("StatusBar", nil, UIParent)
+		ignitebar = CreateFrame("StatusBar", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		ignitebar:SetSize(180, 16)
 		ignitebar:SetPoint("CENTER", UIParent, relativePoint, xPos, yPos)
 		ignitebar:SetBackdrop({bgFile = [[Interface\ChatFrame\ChatFrameBackground]]})
@@ -245,7 +245,7 @@ local function onevent(self, event, prefix, msg, channel, sender, ...)
 		ignitebar.timer:SetTextColor(1, 1, 1)
 		
 		-- Scorch Bar
-		scorchbar = CreateFrame("StatusBar", TOP, UIParent)
+		scorchbar = CreateFrame("StatusBar", TOP, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		scorchbar:SetSize(180, 16)
 		scorchbar:SetPoint("TOP", ignitebar, "BOTTOM", 0, -1)
 		scorchbar:SetBackdrop({bgFile = [[Interface\ChatFrame\ChatFrameBackground]]})
@@ -303,7 +303,7 @@ local function onevent(self, event, prefix, msg, channel, sender, ...)
 		-------------------------------
 		--- Frame for crit tracking ---
 		-------------------------------
-		critFrame = CreateFrame("Frame", "critFrame", UIParent)
+		critFrame = CreateFrame("Frame", "critFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		critFrame:SetMovable(true)
 		critFrame:EnableMouse(true)
 		critFrame:RegisterForDrag("LeftButton")
